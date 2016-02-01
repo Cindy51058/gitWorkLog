@@ -16,6 +16,14 @@ namespace 工作日记
             get { return dtWorkLog; }  
             set { dtWorkLog = value; }
         }
+        //计划日期
+        private DateTime planDate;
+        public DateTime PlanDate
+        {
+            get { return planDate; }
+            set { planDate = value; }
+        }
+
         // 计划
         private string strPlan;
 

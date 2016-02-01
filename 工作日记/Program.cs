@@ -10,13 +10,14 @@ namespace 工作日记
     {
         /// <summary>
         /// 应用程序的主入口点。
-        /// </summary>
-        [STAThread]
+        /// </summary> 
+        [STAThreadAttribute]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 f1 = new Form1();
+            Application.Run(f1);
         }
         //aa
     }
